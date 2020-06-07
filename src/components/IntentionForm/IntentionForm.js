@@ -44,6 +44,10 @@ class IntentionForm extends Component {
                     >SET YOUR INTENTION
                     </button>
                 </form>
+                <p className='chosen-intention'>
+                    <h3>Your Intention:</h3>
+                    {this.state.intention}
+                </p>
             </div>
         )
     }

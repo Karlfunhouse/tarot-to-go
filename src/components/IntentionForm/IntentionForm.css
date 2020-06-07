@@ -23,7 +23,10 @@
 #intention {
     width: 400px;
     height: 33px;
-
+    border-radius: 15px;
+    border: 2px solid rgba(15, 175, 201, 1);
+    background-color: rgba(161, 0, 250, 1);
+    color: white;
 }
 
 .set-intention-button {
@@ -31,13 +34,22 @@
     height: 33px;
     margin: 1vh;
     border-radius: 15px;
-    background-color: black;
-    color: rgba(15, 175, 201, 1);
+    background-color: rgba(15, 175, 201, 1);
+    color: rgba(161, 0, 250, 1);
+    border: 2px solid rgba(161, 0, 250, 1);
 }
 
 .set-intention-button:hover {
     cursor: pointer;
     background-color:rgba(161, 0, 250, 1);
-    border: 1px solid rgba(15, 175, 201, 1);
+    border: 2px solid rgba(15, 175, 201, 1);
+    color: rgba(15, 175, 201, 1);
     font-weight: 700;
+}
+
+.chosen-intention {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
