@@ -25,12 +25,13 @@ class IntentionForm extends Component {
         const isFilledOut = intention ? false : true 
         return (
             <div className="intention-container">
-                <h3 className="intention-message">Please set your intention for this session.</h3>
+                <h3 className="intention-message">Close your eyes.</h3>
+                <h3 className="intention-message">Take a deep breath.</h3>
+                <h3 className="intention-message">Set your intention for this session.</h3>
                 <form className="intention-form">
                     <label htmlFor="intention" className='intention-label'></label>
                     <input 
-                        type='text' 
-                        placeholder='intention' 
+                        type='text'  
                         id='intention' 
                         name='intention' 
                         required 

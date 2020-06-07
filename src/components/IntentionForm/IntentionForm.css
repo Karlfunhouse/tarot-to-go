@@ -10,7 +10,7 @@
 }
 
 .intention-message {
-
+    margin-bottom: 1vh;
 }
 
 .intention-form {
@@ -27,6 +27,8 @@
     border: 2px solid rgba(15, 175, 201, 1);
     background-color: rgba(161, 0, 250, 1);
     color: white;
+    margin: 2%;
+    padding: 2% 4% 2% 4%;
 }
 
 .set-intention-button {

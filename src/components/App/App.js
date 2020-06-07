@@ -2,14 +2,15 @@ import React, { Component }  from 'react';
 import Header from '../Header/Header'
 import IntentionForm from '../IntentionForm/IntentionForm'
 import './App.css';
-import { fetchCards } from '../../apiFetch';
+import { fetchCards, fetchSingleCard, fetchThreeCards } from '../../apiFetch';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
       allCards: [],
-      currentCards: [],
+      singleCard: [],
+      threeCards: [],
       intention: ''
     }
   }
@@ -17,6 +18,16 @@ class App extends Component {
   componentDidMount = async () => {
     const cardsData = await fetchCards()
     await this.setState({allCards: cardsData})
+   }
+
+   drawACard = async () => {
+     const singleCardData = await fetchSingleCard()
+     await this.setState({singleCard: singleCardData})
+   }
+
+   drawThreeCards = async () => {
+     const threeCardsData = await fetchThreeCards()
+     await this.setState({threeCards: threeCardsData})
    }
 
    setIntention = (intention) => {
