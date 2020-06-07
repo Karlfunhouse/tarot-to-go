@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import IntentionForm from '../IntentionForm/IntentionForm'
 import './App.css';
 import { fetchCards, fetchSingleCard, fetchThreeCards } from '../../apiFetch';
+import { Route, Redirect } from 'react-router-dom'
 
 class App extends Component {
   constructor() {
