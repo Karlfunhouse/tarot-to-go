@@ -1,0 +1,43 @@
+.intention-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(15, 175, 201);
+    background: linear-gradient(90deg, rgba(15, 175, 201, 1) 0%, rgba(161, 0, 250, 1) 100%);
+    padding: 1vh;
+    /* width: 33%; */
+}
+
+.intention-message {
+
+}
+
+.intention-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intention {
+    width: 400px;
+    height: 33px;
+
+}
+
+.set-intention-button {
+    width: 200px;
+    height: 33px;
+    margin: 1vh;
+    border-radius: 15px;
+    background-color: black;
+    color: rgba(15, 175, 201, 1);
+}
+
+.set-intention-button:hover {
+    cursor: pointer;
+    background-color:rgba(161, 0, 250, 1);
+    border: 1px solid rgba(15, 175, 201, 1);
+    font-weight: 700;
+}
