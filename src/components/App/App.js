@@ -13,10 +13,9 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    const response = await fetch('https://rws-cards-api.herokuapp.com/api/v1/cards/')
-    const cards = await response.json()
-    console.log(cards)
-  }
+    const cardsData = await fetchCards()
+    await this.setState({allCards: cardsData})
+   }
 
 
   render() {
