@@ -1,9 +1,11 @@
 import React, { Component }  from 'react';
+import { Route, Switch } from 'react-router-dom'
 import Header from '../Header/Header'
 import IntentionForm from '../IntentionForm/IntentionForm'
+import CardContainer from '../CardContainer/CardContainer'
+import Card from '../Card/Card'
 import './App.css';
 import { fetchCards, fetchSingleCard, fetchThreeCards } from '../../apiFetch';
-import { Route, Redirect } from 'react-router-dom'
 
 class App extends Component {
   constructor() {
@@ -19,16 +21,24 @@ class App extends Component {
   componentDidMount = async () => {
     const cardsData = await fetchCards()
     await this.setState({allCards: cardsData})
+    const singleCardData = await fetchSingleCard()
+     console.log(singleCardData.cards)
+     await this.setState({singleCard: singleCardData.cards})
+     const threeCardsData = await fetchThreeCards()
+     console.log(threeCardsData.cards)
+     await this.setState({threeCards: threeCardsData.cards})
    }
 
    drawACard = async () => {
      const singleCardData = await fetchSingleCard()
-     await this.setState({singleCard: singleCardData})
+     console.log(singleCardData.cards)
+     await this.setState({singleCard: singleCardData.cards})
    }
 
    drawThreeCards = async () => {
      const threeCardsData = await fetchThreeCards()
-     await this.setState({threeCards: threeCardsData})
+     console.log(threeCardsData.cards)
+     await this.setState({threeCards: threeCardsData.cards})
    }
 
    setIntention = (intention) => {
@@ -40,9 +50,52 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <IntentionForm setIntention={this.setIntention}/>
         
-        
+        <Switch>
+          <Route
+            path='/single-card'
+            render={() => {
+              return(
+                <div>
+                  <IntentionForm 
+                  setIntention={this.setIntention}
+                  drawACard={this.drawACard} 
+                  drawThreeCards={this.drawThreeCards} />
+                  <CardContainer cards={this.state.singleCard}/>
+                </div>
+              )
+            }}
+          />
+          <Route
+            path='/three-card-spread'
+            render={() => {
+              return(
+                <div>
+                  <IntentionForm 
+                  setIntention={this.setIntention}
+                  drawACard={this.drawACard} 
+                  drawThreeCards={this.drawThreeCards} />
+                  <CardContainer cards={this.state.threeCards}/>
+                </div>
+              )
+            }}
+          />
+          <Route
+            path='/'
+            render={() => {
+              return(
+                <div>
+                  <IntentionForm 
+                    setIntention={this.setIntention} 
+                    drawACard={this.drawACard} 
+                    drawThreeCards={this.drawThreeCards}/>
+                    <CardContainer cards={this.state.singleCard}/>
+                    {/* <Card card={this.state.singleCard}/> */}
+                </div>
+              )
+            }}
+          />
+        </Switch>
       </div>
     );
 
