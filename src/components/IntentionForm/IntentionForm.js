@@ -19,7 +19,6 @@ export class IntentionForm extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault()
-        await console.log(1)
         await this.props.setIntention(this.state.intention)
         await this.props.drawACard()
         this.props.history.push('/single-card')
@@ -27,7 +26,6 @@ export class IntentionForm extends Component {
 
     handleSubmitThree = (e) => {
         e.preventDefault()
-        console.log(3)
         this.props.setIntention(this.state.intention)
         this.props.drawThreeCards()
         this.props.history.push('/three-card-spread')
@@ -35,7 +33,6 @@ export class IntentionForm extends Component {
 
     
     render() {
-        console.log(this.props)
         const {intention} = this.state
         const isFilledOut = intention ? false : true;
         return (
