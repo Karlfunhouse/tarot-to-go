@@ -1,27 +1,65 @@
 .card {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    /* flex-direction: column; */
 
 }
 
 .card-image {
-
+    height: 441px;
 }
 
 .card-details {
+    color: white;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 441px;
+    background: rgba(117, 117, 125, 0.4);
+    border-radius: 0 15px 15px 0;
+}
+
+.card-name {
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 10%;
+    opacity: 100%;
+}
+
+.card-description {
+    margin-top: 10%;
 
 }
 
 .wands {
+    /* border: 2px solid purple; */
+    color: #fa00ff;
 
 }
 
 .cups {
+    /* border: 2px solid blue; */
+    color: rgb(10, 210, 232);
 
 }
 
 .swords {
+    /* border: 2px solid white; */
+    color: white;
 
 }
 
 .pentacles {
-    
+    /* border: 2px solid green; */
+    color: #2aff00;
+
+}
+
+.major-arcana {
+    /* border: 2px solid yellow; */
+    color: #F9E06A;
+    width: fit-content;
 }

@@ -39,7 +39,7 @@ export class IntentionForm extends Component {
             <div className="intention-container">
                 <h3 className="intention-message">Close your eyes.</h3>
                 <h3 className="intention-message">Take a deep breath.</h3>
-                <h3 className="intention-message">What is your question or intention for this session.</h3>
+                <h3 className="intention-message">Enter your question or intention for this session below.</h3>
                 <form className="intention-form">
                     <label htmlFor="intention" className='intention-label'></label>
                     <input 

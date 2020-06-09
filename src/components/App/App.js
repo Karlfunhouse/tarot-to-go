@@ -25,13 +25,11 @@ class App extends Component {
 
    drawACard = async () => {
      const singleCardData = await fetchSingleCard()
-     console.log(singleCardData.cards)
      await this.setState({singleCard: singleCardData.cards})
    }
 
    drawThreeCards = async () => {
      const threeCardsData = await fetchThreeCards()
-     console.log(threeCardsData.cards)
      await this.setState({threeCards: threeCardsData.cards})
    }
 
