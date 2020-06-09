@@ -21,13 +21,7 @@ class App extends Component {
   componentDidMount = async () => {
     const cardsData = await fetchCards()
     await this.setState({allCards: cardsData})
-    const singleCardData = await fetchSingleCard()
-     console.log(singleCardData.cards)
-     await this.setState({singleCard: singleCardData.cards})
-     const threeCardsData = await fetchThreeCards()
-     console.log(threeCardsData.cards)
-     await this.setState({threeCards: threeCardsData.cards})
-   }
+    }
 
    drawACard = async () => {
      const singleCardData = await fetchSingleCard()
@@ -90,7 +84,6 @@ class App extends Component {
                     drawACard={this.drawACard} 
                     drawThreeCards={this.drawThreeCards}/>
                     <CardContainer cards={this.state.singleCard}/>
-                    {/* <Card card={this.state.singleCard}/> */}
                 </div>
               )
             }}
