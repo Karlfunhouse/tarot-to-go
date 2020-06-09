@@ -1,0 +1,10 @@
+.cards-display {
+    background-image: url('/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: purple; */
+}
