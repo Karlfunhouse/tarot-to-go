@@ -16,9 +16,9 @@ From there the user can click on "Draw A Single Card" for a quick reading or "3 
 
 ### UI/UX GIFS
 Single Card Reading
-![Single Card Reading]('/single-card.gif')
+![single-card](https://user-images.githubusercontent.com/56427310/84219888-b6f7ea00-aa8e-11ea-9752-840c4b06a508.gif)
 Three Card Spread
-![3 Card Reading]('/three-cards.gif')
+![three-cards](https://user-images.githubusercontent.com/56427310/84219931-d8f16c80-aa8e-11ea-8cb2-fe867429a22e.gif)
 
 ### Technologies Used:
 - React
