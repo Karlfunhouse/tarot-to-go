@@ -45,6 +45,7 @@ export class IntentionForm extends Component {
                     <input 
                         type='text'  
                         id='intention' 
+                        placeholder='Magic Awaits...'
                         name='intention' 
                         required 
                         onChange={this.handleChange} 
