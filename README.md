@@ -15,9 +15,9 @@ From there the user can click on "Draw A Single Card" for a quick reading or "3 
 1. Open `localhost:3000` in your favorite browser
 
 ### UI/UX GIFS
-Single Card Reading
+### Single Card Reading
 ![single-card](https://user-images.githubusercontent.com/56427310/84219888-b6f7ea00-aa8e-11ea-9752-840c4b06a508.gif)
-Three Card Spread
+### Three Card Spread
 ![three-cards](https://user-images.githubusercontent.com/56427310/84219931-d8f16c80-aa8e-11ea-8cb2-fe867429a22e.gif)
 
 ### Technologies Used:
