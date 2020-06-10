@@ -1,68 +1,44 @@
+# Tarot To Go
+
+### Abstract
+Tarot To Go is for Mystics on the Go!  In a fast paced digital era, sometimes it can be difficult to make/find space to do a Tarot reading.  Tarot To Go has got you covered!
+
+### User Interaction
+A user is able to set an intention for their reading and solidify it by typing it into the Intention/Question input field.
+
+From there the user can click on "Draw A Single Card" for a quick reading or "3 Card Spread" to get deeper insight on the Past-Present-Future of the situation/question at hand.
+
+### Install:
+1. Clone this repo
+1. Run `npm install` to get dependencies
+1. Run `npm start' to start the webserver
+1. Open `localhost:3000` in your favorite browser
+
+### UI/UX GIFS
+Single Card Reading
+![Single Card Reading]('/single-card.gif')
+Three Card Spread
+![3 Card Reading]('/three-cards.gif')
+
+### Technologies Used:
+- React
+- Create React App
+- JavaScript
+- CSS
+- Fetch API (https://rws-cards-api.herokuapp.com/api/v1/cards/)
+- Jest
+- React Testing Library
+
+### Learning Goals:
+- Create an App that utilizes a chosen API & is targeted towards a specific audience (Mystics on the Move)
+- Solidfy understanding of React
+- Write tests for React components and some asynchronous functionality
+
+### Future Iterations:
+- Search all cards to browse meanings
+- Make Mobile Responsive
+
+### Contributors:
+[Karl Nielsen](https://github.com/karlfunhouse)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
