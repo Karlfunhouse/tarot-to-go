@@ -3,10 +3,7 @@ import './Card.css'
 
 const Card = (props) => {
     const { type, name, name_short, suit, meaning_up, value_int } = props.card
-    const card = props.card[0]
-    console.log(card);
-    
-
+  
     return (
       <div className="card">
         <div>
