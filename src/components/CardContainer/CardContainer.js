@@ -3,8 +3,6 @@ import './CardContainer.css'
 import Card from '../Card/Card'
 
 const CardContainer = (props) => {
-    console.log(props)
-    console.log(typeof props)
     const cardsInfo = props.cards.map(card => {
         return <Card card={card}/>
     })

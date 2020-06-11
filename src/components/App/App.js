@@ -19,17 +19,18 @@ class App extends Component {
   }
 
   componentDidMount = async () => {
-    const cardsData = await fetchCards()
-    await this.setState({allCards: cardsData})
+    // const cardsData = await fetchCards()
+    // await this.setState({allCards: cardsData})
     }
 
    drawACard = async () => {
      const singleCardData = await fetchSingleCard()
-     await this.setState({singleCard: singleCardData.cards})
+     this.setState({singleCard: singleCardData.cards})
    }
 
    drawThreeCards = async () => {
      const threeCardsData = await fetchThreeCards()
+     console.log(threeCardsData)
      await this.setState({threeCards: threeCardsData.cards})
    }
 
